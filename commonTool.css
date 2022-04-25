@@ -1,25 +1,25 @@
 @charset "UTF-8";
 /* 水平居中 */
-.com-marginCenter {
+.com-margin-center {
   margin: 0 auto;
 }
 
 /* 绝对定位水平居中 */
-.com-absoultCenter-x {
+.com-absoulte-center-x {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
 }
 
 /* 绝对定位垂直居中 */
-.com-absoultCenter-y {
+.com-absoult-center-y {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
 }
 
 /* 绝对定位水平垂直居中 */
-.com-absoultCenter {
+.com-absoult-center {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -27,7 +27,7 @@
 }
 
 /* 禁止用户选中 */
-.com-userNone {
+.com-user-none {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -35,34 +35,34 @@
 }
 
 /* 溢出隐藏 */
-.com-overflowHidden {
+.com-overflow-hidden {
   overflow: hidden;
 }
 
 /* 默认鼠标样式 */
-.com-mouseDefault {
+.com-mouse-default {
   cursor: default;
 }
 
 /* 手形鼠标 */
-.com-mousePoint {
+.com-mouse-point {
   cursor: pointer;
 }
 
-/* 强制竖向滚动条 */
-.com-overflowScroll {
+/* 强制显示竖向滚动条 */
+.com-overflow-scroll {
   overflow: scroll;
   overflow-x: hidden;
 }
 
 /* 左浮动 */
-.com-floatRight {
-  float: right;
+.com-float-right {
+  float: left;
 }
 
 /* 右浮动 */
-.com-floatLeft {
-  float: left;
+.com-float-left {
+  float: right;
 }
 
 /* 清除浮动 */

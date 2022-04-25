@@ -146,7 +146,7 @@ function factor(opts ,count,current) {
 				for (var i = 0, c = opts._header_offsets.length; i < c; i++) {
 					// fixed: top+5防止点击ztree的时候，出现向上抖动的情况
 					if (opts._header_offsets[i] >= (top + 5) ) {
-						console.log('opts._header_offsets['+ i +'] = '+opts._header_offsets[i]);
+						// console.log('opts._header_offsets['+ i +'] = '+opts._header_offsets[i]);
 						$('a').removeClass('curSelectedNode');
 						
 						// 由于有root节点，所以i应该从1开始

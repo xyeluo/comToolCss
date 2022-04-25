@@ -2,7 +2,10 @@
 
 一些常用到的 css 样式整合成类选择器使用。  
 使用 jsdelivr 的 cdn：
-https://cdn.jsdelivr.net/gh/tk914/comToolCss@v0.0.2/commonTool.min.css
+https://cdn.jsdelivr.net/gh/tk914/comToolCss@v0.1.0/commonTool.min.css  
+网页说明文档：（使用 markdown 转换工具 i5ting_toc）
+
+> https://tk914.github.io/comToolCss/
 
 [toc]
 
@@ -15,65 +18,65 @@ com-clearfix
 ## 左浮动
 
 ```css
-com-floatRight
+com-float-right
 ```
 
 ## 右浮动
 
 ```css
-com-floatLeft
+com-float-left
 ```
 
 ## 强制竖向滚动条
 
 ```css
-com-overflowScroll
+com-overflow-scroll
 ```
 
 ## 横向居中
 
 ```css
-com-marginCenter
+com-margin-center
 ```
 
 ## 绝对定位水平垂直居中
 
 ```css
-com-absoultCenter
+com-absoulte-center
 ```
 
 ## 绝对定位垂直居中
 
 ```css
-com-absoultCenter-y
+com-absoulte-center-y
 ```
 
 ## 绝对定位水平居中
 
 ```css
-com-absoultCenter-x
+com-absoulte-center-x
 ```
 
 ## 禁止用户选中
 
 ```css
-com-userNone
+com-user-none
 ```
 
 ## 溢出隐藏
 
 ```css
-com-overflowHidden
+com-overflow-hidden
 ```
 
 ## 默认鼠标样式
 
 ```css
-com-mouseDefault
+com-mouse-default
 ```
 
 ## 手形鼠标
 
 ```css
-com-mousePoint
+com-mouse-point
 ```

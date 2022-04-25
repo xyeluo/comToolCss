@@ -1,7 +1,8 @@
 <html>
   <head>
 	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <title>i5ting_ztree_toc:</title>
+    <title>comToolCss</title>
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/76687240?s=40&v=4">
 		<link href="toc/style/github-bf51422f4bb36427d391e4b75a1daa083c2d840e.css" media="all" rel="stylesheet" type="text/css"/>
 		<link href="toc/style/github2-d731afd4f624c99a4b19ad69f3083cd6d02b81d5.css" media="all" rel="stylesheet" type="text/css"/>
 		<link href="toc/css/zTreeStyle/zTreeStyle.css" media="all" rel="stylesheet" type="text/css"/>
@@ -67,43 +68,113 @@
           	<article class='markdown-body'>
             	<h1 id="comtoolcss">comToolCss</h1>
 <p>一些常用到的 css 样式整合成类选择器使用。<br>使用 jsdelivr 的 cdn：
-<a href="https://cdn.jsdelivr.net/gh/tk914/comToolCss@v0.0.3/commonTool.min.css">https://cdn.jsdelivr.net/gh/tk914/comToolCss@v0.0.3/commonTool.min.css</a></p>
-<p>[toc]</p>
+<a href="https://cdn.jsdelivr.net/gh/tk914/comToolCss@v0.1.0/commonTool.min.css">https://cdn.jsdelivr.net/gh/tk914/comToolCss@v0.1.0/commonTool.min.css</a><br>网页说明文档：（使用 markdown 转换工具 i5ting_toc）</p>
+<blockquote>
+<p><a href="https://tk914.github.io/comToolCss/">https://tk914.github.io/comToolCss/</a></p>
+</blockquote>
+<p><strong>使用 scss 语法说明</strong>：</p>
+<h2 id="-">清除浮动</h2>
+<blockquote>
+<p>com-clearfix</p>
+</blockquote>
+<pre class="prettyprint linenums:0"><code class="lang-css">具体代码：
+*zoom: 1;
+  &amp;::after {
+    clear: both;
+  }
+  &amp;::before,
+  &amp;::after {
+    content: &quot;&quot;;
+    display: table;
+  }
+</code></pre>
 <h2 id="-">左浮动</h2>
-<pre><code class="lang-css">com-floatRight
+<blockquote>
+<p>com-float-right</p>
+</blockquote>
+<pre class="prettyprint linenums:0"><code class="lang-css">具体代码：
+float: left;
 </code></pre>
 <h2 id="-">右浮动</h2>
-<pre><code class="lang-css">com-floatLeft
+<blockquote>
+<p>com-float-left</p>
+</blockquote>
+<pre class="prettyprint linenums:0"><code class="lang-css">具体代码：
+float: right;
 </code></pre>
-<h2 id="-">清除浮动</h2>
-<pre><code class="lang-css">com-clearfix
+<h2 id="-">强制显示竖向滚动条</h2>
+<blockquote>
+<p>com-overflow-scroll</p>
+</blockquote>
+<pre class="prettyprint linenums:0"><code class="lang-css">具体代码：
+overflow: scroll;
+overflow-x: hidden;
 </code></pre>
-<h2 id="-">强制竖向滚动条</h2>
-<pre><code class="lang-css">com-overflowScroll
-</code></pre>
-<h2 id="-">横向居中</h2>
-<pre><code class="lang-css">com-marginCenter
+<h2 id="-">水平居中</h2>
+<blockquote>
+<p>com-margin-center</p>
+</blockquote>
+<pre class="prettyprint linenums:0"><code class="lang-css">具体代码：
+margin: 0 auto;
 </code></pre>
 <h2 id="-">绝对定位水平垂直居中</h2>
-<pre><code class="lang-css">com-absoultCenter
+<blockquote>
+<p>com-absoulte-center</p>
+</blockquote>
+<pre class="prettyprint linenums:0"><code class="lang-css">具体代码：
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
 </code></pre>
 <h2 id="-">绝对定位垂直居中</h2>
-<pre><code class="lang-css">com-absoultCenter-y
+<blockquote>
+<p>com-absoulte-center-y</p>
+</blockquote>
+<pre class="prettyprint linenums:0"><code class="lang-css">具体代码：
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
 </code></pre>
 <h2 id="-">绝对定位水平居中</h2>
-<pre><code class="lang-css">com-absoultCenter-x
+<blockquote>
+<p>com-absoulte-center-x</p>
+</blockquote>
+<pre class="prettyprint linenums:0"><code class="lang-css">具体代码：
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
 </code></pre>
 <h2 id="-">禁止用户选中</h2>
-<pre><code class="lang-css">com-userNone
+<blockquote>
+<p>com-user-none</p>
+</blockquote>
+<pre class="prettyprint linenums:0"><code class="lang-css">具体代码：
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
 </code></pre>
 <h2 id="-">溢出隐藏</h2>
-<pre><code class="lang-css">com-overflowHidden
+<blockquote>
+<p>com-overflow-hidden</p>
+</blockquote>
+<pre class="prettyprint linenums:0"><code class="lang-css">具体代码：
+overflow: hidden;
 </code></pre>
 <h2 id="-">默认鼠标样式</h2>
-<pre><code class="lang-css">com-mouseDefault
+<blockquote>
+<p>com-mouse-default</p>
+</blockquote>
+<pre class="prettyprint linenums:0"><code class="lang-css">具体代码：
+cursor: default;
 </code></pre>
 <h2 id="-">手形鼠标</h2>
-<pre><code class="lang-css">com-mousePoint
+<blockquote>
+<p>com-mouse-point</p>
+</blockquote>
+<pre class="prettyprint linenums:0"><code class="lang-css">具体代码：
+cursor: pointer;
 </code></pre>
 
           	</article>
@@ -115,6 +186,7 @@
 <script type="text/javascript" src="toc/js/jquery.ztree.all-3.5.min.js"></script>
 <script type="text/javascript" src="toc/js/ztree_toc.js"></script>
 <script type="text/javascript" src="toc_conf.js"></script>
+<script src="toc/js/run_prettify.js"></script>
 
 <SCRIPT type="text/javascript" >
 <!--
