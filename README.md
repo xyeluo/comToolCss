@@ -42,19 +42,19 @@ com-margin-center
 ## 绝对定位水平垂直居中
 
 ```css
-com-absoulte-center
+com-absolute-center
 ```
 
 ## 绝对定位垂直居中
 
 ```css
-com-absoulte-center-y
+com-absolute-center-y
 ```
 
 ## 绝对定位水平居中
 
 ```css
-com-absoulte-center-x
+com-absolute-center-x
 ```
 
 ## 禁止用户选中

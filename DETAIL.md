@@ -65,7 +65,7 @@ margin: 0 auto;
 
 ## 绝对定位水平垂直居中
 
-> com-absoulte-center
+> com-absolute-center
 
 ```css
 具体代码：
@@ -77,7 +77,7 @@ transform: translate(-50%, -50%);
 
 ## 绝对定位垂直居中
 
-> com-absoulte-center-y
+> com-absolute-center-y
 
 ```css
 具体代码：
@@ -88,7 +88,7 @@ transform: translateY(-50%);
 
 ## 绝对定位水平居中
 
-> com-absoulte-center-x
+> com-absolute-center-x
 
 ```css
 具体代码：
