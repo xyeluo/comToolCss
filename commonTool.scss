@@ -1,8 +1,21 @@
-/* 横向居中 */
+/* 水平居中 */
 .com-marginCenter {
   margin: 0 auto;
 }
+
+/* 绝对定位水平居中 */
+.com-absoultCenter-x {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
 /* 绝对定位垂直居中 */
+.com-absoultCenter-y {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* 绝对定位水平垂直居中 */
 .com-absoultCenter {
   position: absolute;
   top: 50%;
@@ -41,14 +54,15 @@
 .com-floatLeft {
   float: left;
 }
-/*清除浮动*/
+/* 清除浮动 */
 .com-clearfix {
   *zoom: 1;
-  &::before,&::after{
+  &::before,
+  &::after {
     content: "";
-  display: inline-block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
+    display: inline-block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
   }
 }
