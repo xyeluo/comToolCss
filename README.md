@@ -1,6 +1,9 @@
 # comToolCss
 
-一些常用到的 css 样式整合成类选择器使用
+一些常用到的 css 样式整合成类选择器使用。
+使用jsdelivr的cdn：
+https://cdn.jsdelivr.net/gh/tk914/comToolCss@v0.0.1/commonTool.min.css
+
 [toc]
 
 ## 横向居中
