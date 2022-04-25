@@ -70,10 +70,11 @@
   *zoom: 1;
 }
 
+.com-clearfix::after {
+  clear: both;
+}
+
 .com-clearfix::before, .com-clearfix::after {
   content: "";
-  display: inline-block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
+  display: table;
 }
