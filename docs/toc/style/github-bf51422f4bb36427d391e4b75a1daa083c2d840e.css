@@ -3096,7 +3096,7 @@ table.capped-list.mini-icons .mini-icon {
   padding: 0;
   font-weight: bold;
   line-height: 1.7;
-  cursor: text;
+  cursor: default;
   position: relative;
 }
 .markdown-body h1 .octicon-link,

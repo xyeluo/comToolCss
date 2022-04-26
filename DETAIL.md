@@ -2,7 +2,7 @@
 
 一些常用到的 css 样式整合成类选择器使用。  
 使用 jsdelivr 的 cdn：
-https://cdn.jsdelivr.net/gh/tk914/comToolCss@v0.1.1/commonTool.min.css  
+https://cdn.jsdelivr.net/gh/tk914/comToolCss@v0.1.2/commonTool.min.css  
 网页说明文档：（使用 markdown 转换工具 i5ting_toc）
 
 > https://tk914.github.io/comToolCss/
@@ -28,7 +28,7 @@ https://cdn.jsdelivr.net/gh/tk914/comToolCss@v0.1.1/commonTool.min.css
 
 ## 左浮动
 
-> com-float-right
+> com-float-left
 
 ```css
 具体代码：
@@ -37,7 +37,7 @@ float: left;
 
 ## 右浮动
 
-> com-float-left
+> com-float-right
 
 ```css
 具体代码：
