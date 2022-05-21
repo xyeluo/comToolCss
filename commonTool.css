@@ -4,25 +4,30 @@
   margin: 0 auto;
 }
 
+/* 绝对定位 */
+.com-absolute, .com-absolute-center-x, .com-absolute-center-y, .com-absolute-center {
+  position: absolute;
+}
+
 /* 绝对定位水平居中 */
 .com-absolute-center-x {
-  position: absolute;
   left: 50%;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 
 /* 绝对定位垂直居中 */
 .com-absolute-center-y {
-  position: absolute;
   top: 50%;
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
 /* 绝对定位水平垂直居中 */
 .com-absolute-center {
-  position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
@@ -77,4 +82,38 @@
 .com-clearfix::before, .com-clearfix::after {
   content: "";
   display: table;
+}
+
+/* 容器宽高等同屏幕大小 */
+.com-overspread {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* 转为行级块 */
+.com-display-ib {
+  display: inline-block;
+}
+
+/* flex布局 */
+.com-flex, .com-flex-main-center, .com-flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* flex布局主轴子元素居中 */
+.com-flex-main-center, .com-flex-center {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+/* flex布局子元素水平垂直居中 */
+.com-flex-center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
 }

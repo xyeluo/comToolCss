@@ -1,60 +1,84 @@
+$T: ".com-";
+
 /* 水平居中 */
-.com-margin-center {
+#{$T}margin-center {
   margin: 0 auto;
 }
-/* 绝对定位水平居中 */
-.com-absolute-center-x {
+
+/* 绝对定位 */
+#{$T}absolute {
   position: absolute;
+}
+
+/* 绝对定位水平居中 */
+#{$T}absolute-center-x {
+  @extend #{$T}absolute;
   left: 50%;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
+
 /* 绝对定位垂直居中 */
-.com-absolute-center-y {
-  position: absolute;
+#{$T}absolute-center-y {
+  @extend #{$T}absolute;
   top: 50%;
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+
 /* 绝对定位水平垂直居中 */
-.com-absolute-center {
-  position: absolute;
+#{$T}absolute-center {
+  @extend #{$T}absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+
 /* 禁止用户选中 */
-.com-user-none {
+#{$T}user-none {
   -webkit-user-select: none;
+
   -moz-user-select: none;
+
   -ms-user-select: none;
+
   user-select: none;
 }
+
 /* 溢出隐藏 */
-.com-overflow-hidden {
+#{$T}overflow-hidden {
   overflow: hidden;
 }
+
 /* 默认鼠标样式 */
-.com-mouse-default {
+#{$T}mouse-default {
   cursor: default;
 }
+
 /* 手形鼠标 */
-.com-mouse-point {
+#{$T}mouse-point {
   cursor: pointer;
 }
+
 /* 强制显示竖向滚动条 */
-.com-overflow-scroll {
+#{$T}overflow-scroll {
   overflow: scroll;
   overflow-x: hidden;
 }
+
 /* 左浮动 */
-.com-float-left {
+#{$T}float-left {
   float: left;
 }
+
 /* 右浮动 */
-.com-float-right {
+#{$T}float-right {
   float: right;
 }
+
 /* 清除浮动 */
-.com-clearfix {
+#{$T}clearfix {
   *zoom: 1;
   &::after {
     clear: both;
@@ -65,3 +89,40 @@
     display: table;
   }
 }
+
+/* 容器宽高等同屏幕大小 */
+#{$T}overspread {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* 转为行级块 */
+#{$T}display-ib {
+  display: inline-block;
+}
+
+/* flex布局 */
+#{$T}flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* flex布局主轴子元素居中 */
+#{$T}flex-main-center {
+  @extend #{$T}flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+/* flex布局子元素水平垂直居中 */
+#{$T}flex-center {
+  @extend #{$T}flex-main-center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+}
+
