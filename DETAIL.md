@@ -2,7 +2,10 @@
 
 一些常用到的 css 样式整合成类选择器使用。  
 使用 jsdelivr 的 cdn：
-https://cdn.jsdelivr.net/gh/tk914/comToolCss@v0.2.0/commonTool.min.css  
+https://cdn.jsdelivr.net/gh/tk914/comToolCss@v0.2.0/commonTool.min.css
+
+备用：https://fastly.jsdelivr.net/gh/tk914/comToolCss@0.2.0/commonTool.min.css  
+
 网页说明文档：（使用 markdown 转换工具 i5ting_toc）
 
 > https://tk914.github.io/comToolCss/
@@ -146,7 +149,9 @@ cursor: default;
 具体代码：
 cursor: pointer;
 ```
+
 ## 容器宽高等同屏幕大小
+
 > com-overspread
 
 ```css
@@ -156,6 +161,7 @@ cursor: pointer;
 ```
 
 ## 转为行级块
+
 > com-display-ib
 
 ```css
@@ -163,7 +169,8 @@ cursor: pointer;
   display: inline-block;
 ```
 
-## flex布局
+## flex 布局
+
 > com-flex
 
 ```css
@@ -173,7 +180,8 @@ cursor: pointer;
   display: flex;
 ```
 
-## flex布局主轴子元素居中
+## flex 布局主轴子元素居中
+
 > com-flex-main-center
 
 ```css
@@ -184,7 +192,8 @@ cursor: pointer;
   justify-content: center;
 ```
 
-## flex布局子元素水平垂直居中
+## flex 布局子元素水平垂直居中
+
 > com-flex-center
 
 ```css
