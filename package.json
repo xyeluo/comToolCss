@@ -1,0 +1,23 @@
+{
+  "name": "comtoolcss",
+  "version": "0.2.0",
+  "description": "一些常用到的 css 样式整合成类选择器使用",
+  "main": "commonTool.min.css",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tk914/comToolCss.git"
+  },
+  "author": "tk914",
+  "license": "MIT",
+  "homepage": "https://github.com/tk914/comToolCss",
+  "files": [
+    "commonTool.min.css",
+    "commonTool.css"
+  ]
+}

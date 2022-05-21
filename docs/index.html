@@ -67,16 +67,22 @@
         <div id='readme' style='width:70%;margin-left:20%;'>
           	<article class='markdown-body'>
             	<h1 id="comtoolcss">comToolCss</h1>
-<p>一些常用到的 css 样式整合成类选择器使用。<br>使用 jsdelivr 的 cdn：
+<p>一些常用到的 css 样式整合成类选择器使用。  </p>
+<h2 id="installation">Installation</h2>
+<p>使用 jsdelivr 的 cdn：
 <a href="https://cdn.jsdelivr.net/gh/tk914/comToolCss@v0.2.0/commonTool.min.css">https://cdn.jsdelivr.net/gh/tk914/comToolCss@v0.2.0/commonTool.min.css</a></p>
-<p>备用：<a href="https://fastly.jsdelivr.net/gh/tk914/comToolCss@0.2.0/commonTool.min.css">https://fastly.jsdelivr.net/gh/tk914/comToolCss@0.2.0/commonTool.min.css</a>  </p>
+<p>备用：<a href="https://fastly.jsdelivr.net/gh/tk914/comToolCss@0.2.0/commonTool.min.css">https://fastly.jsdelivr.net/gh/tk914/comToolCss@0.2.0/commonTool.min.css</a></p>
+<p>Install with npm:</p>
+<pre class="prettyprint linenums:0"><code class="lang-shell">npm i comtoolcss --save
+</code></pre>
 <p>网页说明文档：（使用 markdown 转换工具 i5ting_toc）</p>
 <blockquote>
 <p><a href="https://tk914.github.io/comToolCss/">https://tk914.github.io/comToolCss/</a></p>
 </blockquote>
 <p><strong>使用 scss 语法说明</strong>：</p>
 <p><strong>$T: &quot;.com-&quot;;</strong></p>
-<h2 id="-">清除浮动</h2>
+<h2 id="use">Use</h2>
+<h3 id="-">清除浮动</h3>
 <blockquote>
 <p>com-clearfix</p>
 </blockquote>
@@ -91,21 +97,21 @@
     display: table;
   }
 </code></pre>
-<h2 id="-">左浮动</h2>
+<h3 id="-">左浮动</h3>
 <blockquote>
 <p>com-float-left</p>
 </blockquote>
 <pre class="prettyprint linenums:0"><code class="lang-css">具体代码：
 float: left;
 </code></pre>
-<h2 id="-">右浮动</h2>
+<h3 id="-">右浮动</h3>
 <blockquote>
 <p>com-float-right</p>
 </blockquote>
 <pre class="prettyprint linenums:0"><code class="lang-css">具体代码：
 float: right;
 </code></pre>
-<h2 id="-">强制显示竖向滚动条</h2>
+<h3 id="-">强制显示竖向滚动条</h3>
 <blockquote>
 <p>com-overflow-scroll</p>
 </blockquote>
@@ -113,21 +119,21 @@ float: right;
 overflow: scroll;
 overflow-x: hidden;
 </code></pre>
-<h2 id="-">水平居中</h2>
+<h3 id="-">水平居中</h3>
 <blockquote>
 <p>com-margin-center</p>
 </blockquote>
 <pre class="prettyprint linenums:0"><code class="lang-css">具体代码：
 margin: 0 auto;
 </code></pre>
-<h2 id="-">绝对定位</h2>
+<h3 id="-">绝对定位</h3>
 <blockquote>
 <p>com-absolute</p>
 </blockquote>
 <pre class="prettyprint linenums:0"><code class="lang-css">具体代码：
 position: absolute;
 </code></pre>
-<h2 id="-">绝对定位水平垂直居中</h2>
+<h3 id="-">绝对定位水平垂直居中</h3>
 <blockquote>
 <p>com-absolute-center</p>
 </blockquote>
@@ -137,7 +143,7 @@ top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
 </code></pre>
-<h2 id="-">绝对定位垂直居中</h2>
+<h3 id="-">绝对定位垂直居中</h3>
 <blockquote>
 <p>com-absolute-center-y</p>
 </blockquote>
@@ -146,7 +152,7 @@ position: absolute;
 top: 50%;
 transform: translateY(-50%);
 </code></pre>
-<h2 id="-">绝对定位水平居中</h2>
+<h3 id="-">绝对定位水平居中</h3>
 <blockquote>
 <p>com-absolute-center-x</p>
 </blockquote>
@@ -155,7 +161,7 @@ position: absolute;
 left: 50%;
 transform: translateX(-50%);
 </code></pre>
-<h2 id="-">禁止用户选中</h2>
+<h3 id="-">禁止用户选中</h3>
 <blockquote>
 <p>com-user-none</p>
 </blockquote>
@@ -165,28 +171,28 @@ transform: translateX(-50%);
 -ms-user-select: none;
 user-select: none;
 </code></pre>
-<h2 id="-">溢出隐藏</h2>
+<h3 id="-">溢出隐藏</h3>
 <blockquote>
 <p>com-overflow-hidden</p>
 </blockquote>
 <pre class="prettyprint linenums:0"><code class="lang-css">具体代码：
 overflow: hidden;
 </code></pre>
-<h2 id="-">默认鼠标样式</h2>
+<h3 id="-">默认鼠标样式</h3>
 <blockquote>
 <p>com-mouse-default</p>
 </blockquote>
 <pre class="prettyprint linenums:0"><code class="lang-css">具体代码：
 cursor: default;
 </code></pre>
-<h2 id="-">手形鼠标</h2>
+<h3 id="-">手形鼠标</h3>
 <blockquote>
 <p>com-mouse-point</p>
 </blockquote>
 <pre class="prettyprint linenums:0"><code class="lang-css">具体代码：
 cursor: pointer;
 </code></pre>
-<h2 id="-">容器宽高等同屏幕大小</h2>
+<h3 id="-">容器宽高等同屏幕大小</h3>
 <blockquote>
 <p>com-overspread</p>
 </blockquote>
@@ -194,14 +200,14 @@ cursor: pointer;
   width: 100vw;
   height: 100vh;
 </code></pre>
-<h2 id="-">转为行级块</h2>
+<h3 id="-">转为行级块</h3>
 <blockquote>
 <p>com-display-ib</p>
 </blockquote>
 <pre class="prettyprint linenums:0"><code class="lang-css">具体代码：
   display: inline-block;
 </code></pre>
-<h2 id="flex-">flex 布局</h2>
+<h3 id="flex-">flex 布局</h3>
 <blockquote>
 <p>com-flex</p>
 </blockquote>
@@ -210,7 +216,7 @@ cursor: pointer;
   display: -ms-flexbox;
   display: flex;
 </code></pre>
-<h2 id="flex-">flex 布局主轴子元素居中</h2>
+<h3 id="flex-">flex 布局主轴子元素居中</h3>
 <blockquote>
 <p>com-flex-main-center</p>
 </blockquote>
@@ -220,7 +226,7 @@ cursor: pointer;
   -ms-flex-pack: center;
   justify-content: center;
 </code></pre>
-<h2 id="flex-">flex 布局子元素水平垂直居中</h2>
+<h3 id="flex-">flex 布局子元素水平垂直居中</h3>
 <blockquote>
 <p>com-flex-center</p>
 </blockquote>

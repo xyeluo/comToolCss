@@ -1,10 +1,20 @@
 # comToolCss
 
 一些常用到的 css 样式整合成类选择器使用。  
+
+
+## Installation
+
 使用 jsdelivr 的 cdn：
 https://cdn.jsdelivr.net/gh/tk914/comToolCss@v0.2.0/commonTool.min.css
 
-备用：https://fastly.jsdelivr.net/gh/tk914/comToolCss@0.2.0/commonTool.min.css  
+备用：https://fastly.jsdelivr.net/gh/tk914/comToolCss@0.2.0/commonTool.min.css
+
+Install with npm:
+
+```shell
+npm i comtoolcss --save
+```
 
 网页说明文档：（使用 markdown 转换工具 i5ting_toc）
 
@@ -14,7 +24,8 @@ https://cdn.jsdelivr.net/gh/tk914/comToolCss@v0.2.0/commonTool.min.css
 
 **$T: ".com-";**
 
-## 清除浮动
+## Use
+### 清除浮动
 
 > com-clearfix
 
@@ -31,7 +42,7 @@ https://cdn.jsdelivr.net/gh/tk914/comToolCss@v0.2.0/commonTool.min.css
   }
 ```
 
-## 左浮动
+### 左浮动
 
 > com-float-left
 
@@ -40,7 +51,7 @@ https://cdn.jsdelivr.net/gh/tk914/comToolCss@v0.2.0/commonTool.min.css
 float: left;
 ```
 
-## 右浮动
+### 右浮动
 
 > com-float-right
 
@@ -49,7 +60,7 @@ float: left;
 float: right;
 ```
 
-## 强制显示竖向滚动条
+### 强制显示竖向滚动条
 
 > com-overflow-scroll
 
@@ -59,7 +70,7 @@ overflow: scroll;
 overflow-x: hidden;
 ```
 
-## 水平居中
+### 水平居中
 
 > com-margin-center
 
@@ -68,7 +79,7 @@ overflow-x: hidden;
 margin: 0 auto;
 ```
 
-## 绝对定位
+### 绝对定位
 
 > com-absolute
 
@@ -77,7 +88,7 @@ margin: 0 auto;
 position: absolute;
 ```
 
-## 绝对定位水平垂直居中
+### 绝对定位水平垂直居中
 
 > com-absolute-center
 
@@ -89,7 +100,7 @@ left: 50%;
 transform: translate(-50%, -50%);
 ```
 
-## 绝对定位垂直居中
+### 绝对定位垂直居中
 
 > com-absolute-center-y
 
@@ -100,7 +111,7 @@ top: 50%;
 transform: translateY(-50%);
 ```
 
-## 绝对定位水平居中
+### 绝对定位水平居中
 
 > com-absolute-center-x
 
@@ -111,7 +122,7 @@ left: 50%;
 transform: translateX(-50%);
 ```
 
-## 禁止用户选中
+### 禁止用户选中
 
 > com-user-none
 
@@ -123,7 +134,7 @@ transform: translateX(-50%);
 user-select: none;
 ```
 
-## 溢出隐藏
+### 溢出隐藏
 
 > com-overflow-hidden
 
@@ -132,7 +143,7 @@ user-select: none;
 overflow: hidden;
 ```
 
-## 默认鼠标样式
+### 默认鼠标样式
 
 > com-mouse-default
 
@@ -141,7 +152,7 @@ overflow: hidden;
 cursor: default;
 ```
 
-## 手形鼠标
+### 手形鼠标
 
 > com-mouse-point
 
@@ -150,7 +161,7 @@ cursor: default;
 cursor: pointer;
 ```
 
-## 容器宽高等同屏幕大小
+### 容器宽高等同屏幕大小
 
 > com-overspread
 
@@ -160,7 +171,7 @@ cursor: pointer;
   height: 100vh;
 ```
 
-## 转为行级块
+### 转为行级块
 
 > com-display-ib
 
@@ -169,7 +180,7 @@ cursor: pointer;
   display: inline-block;
 ```
 
-## flex 布局
+### flex 布局
 
 > com-flex
 
@@ -180,7 +191,7 @@ cursor: pointer;
   display: flex;
 ```
 
-## flex 布局主轴子元素居中
+### flex 布局主轴子元素居中
 
 > com-flex-main-center
 
@@ -192,7 +203,7 @@ cursor: pointer;
   justify-content: center;
 ```
 
-## flex 布局子元素水平垂直居中
+### flex 布局子元素水平垂直居中
 
 > com-flex-center
 
