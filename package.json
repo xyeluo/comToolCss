@@ -1,6 +1,6 @@
 {
   "name": "comtoolcss",
-  "version": "0.2.0",
+  "version": "0.2.2",
   "description": "一些常用到的 css 样式整合成类选择器使用",
   "main": "commonTool.min.css",
   "directories": {

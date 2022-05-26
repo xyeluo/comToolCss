@@ -38,11 +38,8 @@ $T: ".com-";
 /* 禁止用户选中 */
 #{$T}user-none {
   -webkit-user-select: none;
-
   -moz-user-select: none;
-
   -ms-user-select: none;
-
   user-select: none;
 }
 
@@ -125,4 +122,3 @@ $T: ".com-";
   -ms-flex-line-pack: center;
   align-content: center;
 }
-

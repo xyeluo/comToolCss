@@ -3,7 +3,7 @@
 一些常用到的 css 样式整合成类选择器使用。  
 
 
-## Installation
+## 安装
 
 使用 jsdelivr 的 cdn：
 https://cdn.jsdelivr.net/gh/tk914/comToolCss@v0.2.0/commonTool.min.css
@@ -22,7 +22,7 @@ npm i comtoolcss --save
 
 [toc]
 
-## Use
+## 使用
 ### 清除浮动
 
 ```css
