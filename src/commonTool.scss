@@ -1,4 +1,4 @@
-$T: ".com-";
+@import '_tools';
 
 /* 水平居中 */
 #{$T}margin-center {
@@ -14,33 +14,26 @@ $T: ".com-";
 #{$T}absolute-center-x {
   @extend #{$T}absolute;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
+  @include wb(transform, translateX(-50%));
 }
 
 /* 绝对定位垂直居中 */
 #{$T}absolute-center-y {
   @extend #{$T}absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+  @include wb(transform, translateY(-50%));
 }
 
 /* 绝对定位水平垂直居中 */
 #{$T}absolute-center {
   @extend #{$T}absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  @include setSameValue((top left), 50%);
+  @include wb(transform, translate(-50%, -50%));
 }
 
 /* 禁止用户选中 */
 #{$T}user-none {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  @include wb(user-select, none, true);
 }
 
 /* 溢出隐藏 */
@@ -77,12 +70,14 @@ $T: ".com-";
 /* 清除浮动 */
 #{$T}clearfix {
   *zoom: 1;
+
   &::after {
     clear: both;
   }
+
   &::before,
   &::after {
-    content: "";
+    content: '';
     display: table;
   }
 }
@@ -108,17 +103,23 @@ $T: ".com-";
 /* flex布局主轴子元素居中 */
 #{$T}flex-main-center {
   @extend #{$T}flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  @include setSameValue(
+    (-webkit-box-pack, -ms-flex-pack, justify-content),
+    center
+  );
 }
 
 /* flex布局子元素水平垂直居中 */
 #{$T}flex-center {
   @extend #{$T}flex-main-center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
+  @include setSameValue(
+    (
+      -webkit-box-align,
+      -ms-flex-align,
+      -ms-flex-line-pack,
+      align-items,
+      align-content
+    ),
+    center
+  );
 }

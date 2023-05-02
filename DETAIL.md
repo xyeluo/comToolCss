@@ -1,14 +1,13 @@
 # comToolCss
 
-一些常用到的 css 样式整合成类选择器使用。  
-
+一些常用到的 css 样式整合成类选择器使用。
 
 ## 安装
 
 使用 jsdelivr 的 cdn：
-https://cdn.jsdelivr.net/gh/tk914/comToolCss@v0.2.0/commonTool.min.css
+https://cdn.jsdelivr.net/gh/xyeluo/comToolCss@v0.2.0/commonTool.min.css
 
-备用：https://fastly.jsdelivr.net/gh/tk914/comToolCss@0.2.0/commonTool.min.css
+备用：https://fastly.jsdelivr.net/gh/xyeluo/comToolCss@0.2.0/commonTool.min.css
 
 Install with npm:
 
@@ -18,13 +17,14 @@ npm i comtoolcss --save
 
 网页说明文档：（使用 markdown 转换工具 i5ting_toc）
 
-> https://tk914.github.io/comToolCss/
+> https://xyeluo.github.io/comToolCss/
 
 **使用 scss 语法说明**：
 
 **$T: ".com-";**
 
 ## 使用
+
 ### 清除浮动
 
 > com-clearfix

@@ -1,0 +1,16 @@
+$T: '.com-';
+
+@mixin wb($key, $value, $other-compatibility: false) {
+  @if $other-compatibility==true {
+    -moz-#{$key}: $value;
+    -ms-#{$key}: $value;
+  }
+  -webkit-#{$key}: $value;
+  #{$key}: $value;
+}
+
+@mixin setSameValue($list, $value) {
+  @each $key in $list {
+    #{$key}: $value;
+  }
+}

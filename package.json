@@ -7,17 +7,21 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "sass --watch ./src:./dist",
+    "build": "sass ./src/:./dist/ --style=compressed --no-source-map && mv ./dist/commonTool.css ./dist/commonTool.min.css"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/tk914/comToolCss.git"
+    "url": "https://github.com/xyeluo/comToolCss.git"
   },
-  "author": "tk914",
+  "author": "xyeluo",
   "license": "MIT",
-  "homepage": "https://github.com/tk914/comToolCss",
+  "homepage": "https://github.com/xyeluo/comToolCss",
   "files": [
     "commonTool.min.css",
     "commonTool.css"
-  ]
+  ],
+  "devDependencies": {
+    "sass": "^1.62.1"
+  }
 }
