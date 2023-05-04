@@ -1,80 +1,82 @@
 @import '_tools';
 
 /* 水平居中 */
-#{$T}margin-center {
+@include b(margin-center) {
   margin: 0 auto;
 }
 
-/* 绝对定位 */
-#{$T}absolute {
+%absolute {
   position: absolute;
 }
-
-/* 绝对定位水平居中 */
-#{$T}absolute-center-x {
-  @extend #{$T}absolute;
-  left: 50%;
-  @include wb(transform, translateX(-50%));
-}
-
-/* 绝对定位垂直居中 */
-#{$T}absolute-center-y {
-  @extend #{$T}absolute;
-  top: 50%;
-  @include wb(transform, translateY(-50%));
-}
-
-/* 绝对定位水平垂直居中 */
-#{$T}absolute-center {
-  @extend #{$T}absolute;
-  @include setSameValue((top left), 50%);
-  @include wb(transform, translate(-50%, -50%));
+/* 绝对定位 */
+@include b(absolute) {
+  @extend %absolute;
+  /* 绝对定位水平垂直居中 */
+  @include m(center) {
+    @extend %absolute;
+    @include setSameValue((top left), 50%);
+    @include wb(transform, translate(-50%, -50%));
+    /* 绝对定位水平居中 */
+    @include m(x) {
+      @extend %absolute;
+      left: 50%;
+      @include wb(transform, translateX(-50%));
+    }
+    /* 绝对定位垂直居中 */
+    @include m(y) {
+      @extend %absolute;
+      top: 50%;
+      @include wb(transform, translateY(-50%));
+    }
+  }
 }
 
 /* 禁止用户选中 */
-#{$T}user-none {
+@include b(user-none) {
   @include wb(user-select, none, true);
 }
 
-/* 溢出隐藏 */
-#{$T}overflow-hidden {
-  overflow: hidden;
+/* 鼠标样式 */
+@include b(mouse) {
+  /* 默认鼠标样式 */
+  @include m(default) {
+    cursor: default;
+  }
+  /* 手形鼠标 */
+  @include m(point) {
+    cursor: pointer;
+  }
 }
 
-/* 默认鼠标样式 */
-#{$T}mouse-default {
-  cursor: default;
+@include b(overflow) {
+  /* 溢出隐藏 */
+  @include m(hidden) {
+    overflow: hidden;
+  }
+  /* 强制显示竖向滚动条 */
+  @include m(scroll) {
+    overflow: scroll;
+    overflow-x: hidden;
+  }
 }
 
-/* 手形鼠标 */
-#{$T}mouse-point {
-  cursor: pointer;
-}
-
-/* 强制显示竖向滚动条 */
-#{$T}overflow-scroll {
-  overflow: scroll;
-  overflow-x: hidden;
-}
-
-/* 左浮动 */
-#{$T}float-left {
-  float: left;
-}
-
-/* 右浮动 */
-#{$T}float-right {
-  float: right;
+@include b(float) {
+  /* 左浮动 */
+  @include m(left) {
+    float: left;
+  }
+  /* 右浮动 */
+  @include m(right) {
+    float: right;
+  }
 }
 
 /* 清除浮动 */
-#{$T}clearfix {
+@include b(clearfix) {
   *zoom: 1;
-
   &::after {
     clear: both;
   }
-
   &::before,
   &::after {
     content: '';
@@ -83,43 +85,48 @@
 }
 
 /* 容器宽高等同屏幕大小 */
-#{$T}overspread {
+@include b(w-h-100) {
   width: 100vw;
   height: 100vh;
 }
 
 /* 转为行级块 */
-#{$T}display-ib {
+@include b(display-ib) {
   display: inline-block;
 }
 
-/* flex布局 */
-#{$T}flex {
+%flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-
-/* flex布局主轴子元素居中 */
-#{$T}flex-main-center {
-  @extend #{$T}flex;
+%flex-co {
   @include setSameValue(
     (-webkit-box-pack, -ms-flex-pack, justify-content),
     center
   );
 }
-
-/* flex布局子元素水平垂直居中 */
-#{$T}flex-center {
-  @extend #{$T}flex-main-center;
-  @include setSameValue(
-    (
-      -webkit-box-align,
-      -ms-flex-align,
-      -ms-flex-line-pack,
-      align-items,
-      align-content
-    ),
-    center
-  );
+/* flex布局 */
+@include b(flex) {
+  @extend %flex;
+  /* flex布局主轴子元素居中 */
+  @include m(main-center) {
+    @extend %flex;
+    @extend %flex-co;
+  }
+  /* flex布局子元素水平垂直居中 */
+  @include m(center) {
+    @extend %flex;
+    @extend %flex-co;
+    @include setSameValue(
+      (
+        -webkit-box-align,
+        -ms-flex-align,
+        -ms-flex-line-pack,
+        align-items,
+        align-content
+      ),
+      center
+    );
+  }
 }

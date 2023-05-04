@@ -1,10 +1,26 @@
-$T: '.com-';
+$_T: '.com';
+$_mod: '-';
+
+@mixin b($name) {
+  #{$_T + $_mod + $name} {
+    @content;
+  }
+}
+@mixin m($name) {
+  $selector: &;
+  @at-root {
+    #{$selector + $_mod + $name} {
+      @content;
+    }
+  }
+}
 
 @mixin wb($key, $value, $other-compatibility: false) {
   @if $other-compatibility==true {
     -moz-#{$key}: $value;
     -ms-#{$key}: $value;
   }
+
   -webkit-#{$key}: $value;
   #{$key}: $value;
 }

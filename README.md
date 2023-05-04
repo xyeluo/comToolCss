@@ -15,10 +15,6 @@ Install with npm:
 npm install comtoolcss --save
 ```
 
-网页说明文档：（使用 markdown 转换工具 i5ting_toc）
-
-> https://xyeluo.github.io/comToolCss/
-
 [toc]
 
 ## 使用
@@ -136,7 +132,7 @@ com-flex-center
 
 </details>
 
-### 开发
+## 开发
 
 ```shell
 pnpm install  # 安装依赖
